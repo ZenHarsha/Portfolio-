@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My - Portfolio</title>
-   <link rel="stylesheet" href="styles.css">
-   <link href="https://fonts.googleapis.com/css2?family=Anurati&display=swap" rel="stylesheet">
-   <link rel="icon" href="https://i.ibb.co/j4v485w/circle.png" type="image/png">
-
+    <title>Harsha - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anurati&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/j4v485w/circle.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <nav class="navbar">
         <div class="logo">Portfolio</div>
         <div class="nav-links">
             <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#courses">Courses</a>
             <a class="resume-btn">Resume</a>
@@ -28,7 +28,6 @@
     <div id="popup" class="popup hidden">
         <p>Will update to you soon Buddy</p>
     </div>
-    
 
     <main>
         <section id="home" class="hero">
@@ -44,6 +43,25 @@
                     Contact Me
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
                 </a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hi, I'm Harsha Vardhan reddy , i was currently studying B-tech first year in KL_UNIVERSITY  {HYD}
+                        </p>
+                        <p>
+                            I had finished  [HTML-CSS-JS] and now iam Grinding in  React ,Node.js,and M>E>R>N !!
+                        </p>
+                    </div>
+                    <div class="about-3d">
+                        <canvas id="three-canvas"></canvas>
+                    </div>
+                </div>
             </div>
         </section>
 
