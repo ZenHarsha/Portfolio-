@@ -623,4 +623,15 @@ footer {
   .mail-btn::before {
     background: linear-gradient(120deg, #f39c12, #f39c92); 
   }
-  
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: rgb(216, 2, 2);
+    width: 0;
+    z-index: 5000;
+    transition: width 0.1s ease-out;
+}
+
+
