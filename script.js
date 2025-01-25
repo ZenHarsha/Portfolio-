@@ -68,7 +68,6 @@ resumeBtn.addEventListener('click', (e) => {
     }, 1000);
 });
 
-// Enhanced Three.js animation
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('three-canvas'), alpha: true });
@@ -139,7 +138,6 @@ function animate() {
 
 animate();
 
-// Intersection Observer for About section
 const aboutSection = document.querySelector('#about');
 const aboutText = document.querySelector('.about-text');
 const about3D = document.querySelector('.about-3d');
