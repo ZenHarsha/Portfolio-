@@ -157,3 +157,17 @@ const aboutObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 aboutObserver.observe(aboutSection);
+
+
+document.addEventListener("scroll", () => {
+    const scrollProgress = document.querySelector(".scroll-progress");
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+
+    scrollProgress.style.width = scrollPercent + "%";
+});
+
+const scrollProgressBar = document.createElement("div");
+scrollProgressBar.classList.add("scroll-progress");
+document.body.prepend(scrollProgressBar);
