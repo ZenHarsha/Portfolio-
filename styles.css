@@ -25,8 +25,10 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 
+    2rem;
 }
+
 
 .navbar {
     display: flex;
@@ -306,7 +308,7 @@ body {
 .project-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: var(--button-color);
+    background-color: rgb(131, 37, 32);
     color: var(--background);
     text-decoration: none;
     border-radius: 5px;
@@ -314,9 +316,9 @@ body {
 }
 
 .project-link:hover {
-    background-color: #D97706;
+    background-color: #cd2020;
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(245, 158, 11, 0.2);
+    box-shadow: 0 4px 6px rgba(245, 11, 11, 0.2);
 }
 
 .courses-grid {
@@ -355,7 +357,7 @@ body {
 }
 
 .course-card:hover .course-title {
-    color: #93C5FD;
+    color: #0077ff;
 }
 
 .course-status {
@@ -447,9 +449,9 @@ h8 {
 
 .h7 {
     color: #EC4899;
+
 }
 
-/* Enhanced styles for About Me section */
 #about {
     padding: 6rem 0;
     position: relative;
@@ -623,7 +625,7 @@ footer {
   .mail-btn::before {
     background: linear-gradient(120deg, #f39c12, #f39c92); 
   }
-  .scroll-progress {
+.scroll-progress {
     position: fixed;
     top: 0;
     left: 0;
@@ -633,5 +635,4 @@ footer {
     z-index: 5000;
     transition: width 0.1s ease-out;
 }
-
 
