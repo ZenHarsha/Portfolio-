@@ -630,7 +630,7 @@ footer {
     top: 0;
     left: 0;
     height: 4px;
-    background-color: rgb(216, 2, 2);
+    background: linear-gradient(to right, #7d05be, #d30808);
     width: 0;
     z-index: 5000;
     transition: width 0.1s ease-out;
