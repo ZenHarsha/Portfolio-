@@ -167,11 +167,14 @@ body {
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
     max-width: 600px;
     margin-bottom: 2rem;
     opacity: 0;
+    font-family: "Rubik Mono One", monospace;
+   font-weight: 400;
+   font-style: normal;
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards 0.5s;
 }
@@ -254,6 +257,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
+    color:white;
 }
 
 .projects-grid {
@@ -366,6 +370,10 @@ body {
 }
 
 .sigma-text {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -467,12 +475,19 @@ h8 {
 
 .about-text {
     flex: 1;
+    font-size: 0.5rem;
     opacity: 0;
     transform: translateX(-50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     font-size: large;
-    color: #7928CA;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-family: "Overpass", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+ 
+  
+
 }
 
 .about-text.animate {
@@ -635,4 +650,21 @@ footer {
     z-index: 5000;
     transition: width 0.1s ease-out;
 }
+
+
+hr.hr1 , hr.hr2 , hr.hr3 {
+    border: none;
+  border-top: 1px solid #ddd;
+  margin: 40px 0;
+  opacity: 0.2;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 90px;
+  margin-right: 90px;
+  border-style: inset;
+  border-width: 1px;
+
+}
+
 
