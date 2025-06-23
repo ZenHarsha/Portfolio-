@@ -47,27 +47,28 @@ window.addEventListener('load', animateElements);
 
 const resumeBtn = document.querySelector('.resume-btn');
 
-resumeBtn.addEventListener('click', (e) => {
-    e.preventDefault();
+// resumeBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
 
-    const popup = document.createElement('div');
-    popup.id = 'popup';
-    popup.textContent = 'Will update to you soon Buddy!';
+//     const popup = document.createElement('div');
+//     popup.id = 'popup';
+//     popup.textContent = 'Will update to you soon Buddy!';
 
-    document.body.appendChild(popup);
+//     document.body.appendChild(popup);
 
-    setTimeout(() => {
-        popup.classList.add('show');
-    }, 10);
+//     setTimeout(() => {
+//         popup.classList.add('show');
+//     }, 10);
 
-    setTimeout(() => {
-        popup.classList.remove('show');
-        setTimeout(() => {
-            popup.remove();
-        }, 1000);
-    }, 1000);
-});
+//     setTimeout(() => {
+//         popup.classList.remove('show');
+//         setTimeout(() => {
+//             popup.remove();
+//         }, 1000);
+//     }, 1000);
+// });
 
+// Eneanced Three.js animation
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('three-canvas'), alpha: true });
@@ -88,7 +89,7 @@ scene.add(light);
 
 camera.position.z = 5;
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Python'];
+const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Python','mongoDB'];
 const skillTags = [];
 
 skills.forEach((skill, index) => {
@@ -116,7 +117,7 @@ function animate() {
 
     icosahedron.rotation.x += mouseY * 0.05;
     icosahedron.rotation.y += mouseX * 0.05;
-
+  
     const time = Date.now() * 0.001;
 
     skillTags.forEach((tag, index) => {
@@ -156,7 +157,6 @@ const aboutObserver = new IntersectionObserver((entries) => {
 
 aboutObserver.observe(aboutSection);
 
-
 document.addEventListener("scroll", () => {
     const scrollProgress = document.querySelector(".scroll-progress");
     const scrollTop = document.documentElement.scrollTop;
@@ -169,3 +169,16 @@ document.addEventListener("scroll", () => {
 const scrollProgressBar = document.createElement("div");
 scrollProgressBar.classList.add("scroll-progress");
 document.body.prepend(scrollProgressBar);
+
+
+// Auto-hide welcome message after animation completes
+document.addEventListener('DOMContentLoaded', function() {
+    const welcomeOverlay = document.querySelector('.welcome-overlay');
+    
+    // Remove the overlay from DOM after animation completes
+    setTimeout(() => {
+        if (welcomeOverlay) {
+            welcomeOverlay.style.display = 'none';
+        }
+    }, 4000); // 4 seconds, matching the animation duration
+});
